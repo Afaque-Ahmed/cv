@@ -3,198 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Afaque Cv</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f0f2f5;
-        margin: 0;
-        padding: 0;
-        color: #333;
-      }
-
-      .container {
-        max-width: 50%;
-        margin: 40px auto;
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 20px;
-        border: 2px solid #007bff;
-      }
-
-      .header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-      }
-
-      .profile-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-right: 20px;
-        border: 4px solid #007bff;
-      }
-
-      .profile-img img {
-        width: 100%;
-        height: auto;
-      }
-
-      .header .name {
-        font-size: 36px;
-        font-weight: bold;
-        color: #333;
-      }
-
-      .header .contact-info {
-        margin-left: auto;
-        text-align: left;
-      }
-
-      .header .contact-info p {
-        margin: 5px 0;
-        font-size: 14px;
-        color: #555;
-      }
-
-      .sections {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .section {
-        width: 48%;
-        padding: 0 20px;
-      }
-
-      .section:not(:last-child) {
-        border-right: 2px solid #e0e0e0;
-      }
-
-      .section h2 {
-        font-size: 20px;
-        color: #007bff;
-        margin-bottom: 15px;
-        border-bottom: 3px solid #007bff;
-        padding-bottom: 5px;
-      }
-
-      .section .item {
-        margin-bottom: 20px;
-      }
-
-      .section .item h3 {
-        font-size: 18px;
-        color: #333;
-        margin-bottom: 5px;
-      }
-
-      .section .item .subtext {
-        font-size: 14px;
-        color: #777;
-      }
-
-      .skills li {
-        font-size: 18px;
-        font-weight: bolder;
-      }
-      .summary {
-        padding: 0 20px;
-      }
-      .summary h1 {
-        color: #007bff;
-      }
-    </style>
+    <title>Afaque CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="profile-img">
-          <img src="assets/profile.png" alt="Profile Picture" />
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto my-10 bg-white p-8 rounded-2xl shadow-xl max-w-4xl">
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row items-center mb-12">
+        <!-- Profile Image -->
+        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg mb-6 md:mb-0 md:mr-8 transform hover:scale-105 transition-transform duration-300">
+          <img src="assets/profile.png" alt="Profile Picture" class="w-full h-full object-cover" />
         </div>
-        <div class="name">
-          AFAQUE <br />
-          AHMED
+        <!-- Name -->
+        <div class="text-center md:text-left">
+          <h1 class="text-5xl font-bold text-gray-900 tracking-wide leading-tight">
+            AFAQUE AHMED
+          </h1>
+          <p class="text-lg text-blue-500 font-semibold mt-2">
+            PHP Developer
+          </p>
         </div>
-        <div class="contact-info">
-          <p>afaqueak.official@gmail.com</p>
-          <p>+92-3060030263</p>
+         <!-- Contact Info -->
+         <div class="flex flex-col items-center md:ml-auto text-center md:text-left mt-6 md:mt-0">
+          <p class="text-gray-600 text-sm">afaqueak.official@gmail.com</p>
+          <p class="text-gray-600 text-sm">+92-3060030263</p>
         </div>
       </div>
-      <div class="summary">
-        <h1>Summary</h1>
-        <p>
-          Experienced PHP Developer adept in PHP, MySQL, HTML, CSS, and
-          JavaScript. Skilled in backend development, database management,
-          collaborative teamwork, issue resolution, and delivering quality code.
-          Committed to learning, embracing new technologies, and staying updated
-          on industry trends.
+
+      <!-- Summary -->
+      <div class="mb-12">
+        <h2 class="text-3xl text-blue-500 font-semibold mb-6">Summary</h2>
+        <p class="text-base leading-relaxed text-gray-700">
+          Experienced PHP Developer adept in PHP, MySQL, HTML, CSS, and JavaScript.
+          Skilled in backend development, database management, collaborative teamwork,
+          issue resolution, and delivering quality code. Committed to learning, embracing
+          new technologies, and staying updated on industry trends.
         </p>
       </div>
-      <div class="sections">
-        <div class="section">
-          <h2>Experience</h2>
-          <div class="item">
-            <h3>PHP Developer</h3>
-            <p class="subtext">Career Consultants Inc | Jan 2024 – Present</p>
-            <ul>
-              <li>
-                Develop and maintain web applications using PHP, MySQL, HTML,
-                CSS, and JavaScript.
-              </li>
-              <li>
-                Assist in the design, coding, and testing of technical
-                solutions.
-              </li>
-              <li>
-                Troubleshoot, test, and maintain the core product software and
-                databases to ensure strong optimization and functionality.
-              </li>
-              <li>
-                Contribute to all phases of the development lifecycle, following
-                industry best practices.
-              </li>
-              <li>
-                Write clean, well-designed code and produce detailed
-                specifications.
-              </li>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Experience Section -->
+        <div>
+          <h2 class="text-3xl text-blue-500 font-semibold mb-6">Experience</h2>
+
+          <div class="mb-8">
+            <h3 class="text-xl font-bold text-gray-900">PHP Developer</h3>
+            <p class="text-gray-500 text-sm mb-2">Career Consultants Inc | Jan 2024 – Present</p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Develop and maintain web applications using PHP, MySQL, HTML, CSS, and JavaScript.</li>
+              <li>Assist in the design, coding, and testing of technical solutions.</li>
+              <li>Troubleshoot, test, and maintain the core product software and databases to ensure strong optimization and functionality.</li>
+              <li>Contribute to all phases of the development lifecycle, following industry best practices.</li>
+              <li>Write clean, well-designed code and produce detailed specifications.</li>
             </ul>
           </div>
-          <div class="item">
-            <h3>Front End Developer Internship</h3>
-            <p class="subtext">Weblinx Solution | July 2021 – Aug 2021</p>
-            <ul>
-              <li>
-                Assist in the development of responsive and visually appealing
-                web pages using HTML, CSS, and JavaScript.
-              </li>
-              <li>
-                Learn and apply best practices in web development, including
-                version control with Git.
-              </li>
-              <li>
-                Stay updated on emerging trends and technologies in front-end
-                development.
-              </li>
+
+          <div class="mb-8">
+            <h3 class="text-xl font-bold text-gray-900">Front End Developer Internship</h3>
+            <p class="text-gray-500 text-sm mb-2">Weblinx Solution | July 2021 – Aug 2021</p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Assist in the development of responsive and visually appealing web pages using HTML, CSS, and JavaScript.</li>
+              <li>Learn and apply best practices in web development, including version control with Git.</li>
+              <li>Stay updated on emerging trends and technologies in front-end development.</li>
             </ul>
           </div>
-          <h2>Education</h2>
-          <div class="item">
-            <h3>ACCP Prime - Diploma of Software Engineering</h3>
-            <p class="subtext">APTECH Computer Education | 2021–2024</p>
+
+          <h2 class="text-3xl text-blue-500 font-semibold mb-6">Education</h2>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">ACCP Prime - Diploma of Software Engineering</h3>
+            <p class="text-gray-500 text-sm">APTECH Computer Education | 2021–2024</p>
           </div>
         </div>
-        <div class="section skills">
-          <h2>Skills</h2>
-          <ul class="skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>PHP/Laravel</li>
-            <li>MYSQL</li>
+
+        <!-- Skills Section -->
+        <div>
+          <h2 class="text-3xl text-blue-500 font-semibold mb-6">Skills</h2>
+          <ul class="list-none space-y-4 text-lg font-semibold text-gray-800">
+            <li class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full inline-block">HTML</li>
+            <li class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full inline-block">CSS</li>
+            <li class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full inline-block">JavaScript</li>
+            <li class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full inline-block">Bootstrap</li>
+            <li class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full inline-block">PHP/Laravel</li>
+            <li class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full inline-block">MySQL</li>
           </ul>
         </div>
       </div>
